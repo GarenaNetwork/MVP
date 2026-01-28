@@ -1,0 +1,14 @@
+{
+  "name": "Magic GamerHub",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend start\""
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
